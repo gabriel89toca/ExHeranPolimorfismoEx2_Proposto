@@ -26,7 +26,7 @@ namespace ExHeranPolimorfismoEx2_Proposto.Entities
 
         public override string PriceTag()
         {
-            return TotalPrice() + "(Customs fee: $ " + CustomsFee.ToString("F2", CultureInfo.InvariantCulture) + ").";
+            return " $ " + TotalPrice().ToString("F2", CultureInfo.InvariantCulture) + " (Customs fee: $ " + CustomsFee.ToString("F2", CultureInfo.InvariantCulture) + ").";
         }
     }
 }
