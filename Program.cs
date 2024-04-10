@@ -21,7 +21,7 @@ namespace ExHeranPolimorfismoEx2_Proposto
             {
                 Console.Write("Common, used or imported(c/ u / i)?");
                 Char typeProduct = Char.Parse(Console.ReadLine());
-                Console.WriteLine("Product #{i} data:");
+                Console.WriteLine($"Product #{i} data:");
                 Console.Write("Name:");
                 string productName = Console.ReadLine();
                 Console.Write("Price:");
@@ -54,9 +54,12 @@ namespace ExHeranPolimorfismoEx2_Proposto
             Console.WriteLine("PRICE TAGS:");
             Console.WriteLine("");
             
+            int x = 1;
             foreach (Product product in products)
             {
-                Console.WriteLine(product.Name + product.PriceTag());
+                
+                Console.WriteLine($"{x} - " +product.Name + product.PriceTag());
+                x = x + 1;
             }
 
 
